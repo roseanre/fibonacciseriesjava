@@ -26,7 +26,7 @@ class Calender {
             }
 
         }
-        String[] days={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"}; //taking weeks
+        String[] days={"Mon","Tue","Wed","Thu","Fri","Sat","Sun"}; //taking weeks
         String[] month={"","January","February","March","April","May","June","July","August","September","October","November","December"}; //months
 
         int[] dayinmonth={0,31,28,31,30,31,30,31,31,30,31,30,31}; //giving how many days in a month
@@ -39,12 +39,14 @@ class Calender {
         else
             max=dayinmonth[m];
         LocalDate  ld=LocalDate.of(y,m,01);
-        System.out.println("ld "+ld);
+//        System.out.println("ld "+ld);
         java.time.DayOfWeek dow=ld.getDayOfWeek();//give that particular day in a week
-        System.out.println("dow"+dow);
+//        System.out.println("dow"+dow);
         int n= dow.getValue(); //gives that day number
-        System.out.println("n"+n);
+//        System.out.println("n"+n);
         System.out.println(month[m]+" "+y);
+
+
         System.out.println("sun "+"mon "+"tue "+"wed "+"thu "+"fri "+"sat ");
         if(n!=7) {
             for (int i = 1; i <= n; i++) {
