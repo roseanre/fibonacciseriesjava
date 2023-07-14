@@ -17,6 +17,7 @@ class Streams {
         numbers.stream()
                 .map(eachNumber ->eachNumber*2)
                 .forEach(number -> System.out.println(number));
+        
 
     }
 }
