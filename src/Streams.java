@@ -10,7 +10,7 @@ class Streams {
 
         /*List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "Dave");
 
-        names.stream()  //  stream source
+        names.stream()  //  stream source of the 
                 .filter(eachName -> eachName.length() > 4)  // intermediate operation
                 .forEach(name -> System.out.println(name));  // terminal operation */
         List<Integer> numbers=Arrays.asList(2,8,4,7,6);
